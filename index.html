@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음원 변환기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>음원 변환기</h1>
+        <input type="file" id="audioInput" accept=".mp3,.m4a,.wav">
+        <select id="genreSelect">
+            <option value="">장르 선택</option>
+            <option value="hardstyle">Hardstyle</option>
+            <option value="techno">Techno</option>
+            <option value="trance">Trance</option>
+            <option value="hardbass">Hardbass</option>
+            <option value="lofi">Lo-fi</option>
+        </select>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <button id="downloadBtn" disabled>다운로드</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
